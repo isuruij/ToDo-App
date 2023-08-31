@@ -46,7 +46,7 @@ const Card = ({taskObj, index, deleteTask, updateListArray}) => {
                 <span className = "card-header" style={{ "border-radius": "10px"}}>{taskObj.Name}</span>
                 <p className = "mt-3">{taskObj.Description}</p>
 
-                <div style={{"position": "absolute", "right" : "20px", "bottom" : "20px"}}>
+                <div className="ic" style={{"position": "absolute", "right" : "20px", "bottom" : "20px"}}>
                     <i className = "far fa-edit mr-4" style={{"color" : colors[index%5].primaryColor, "cursor" : "pointer", marginRight:"10px"}} onClick = {() => setModal(true)}></i>
                     <i className="fas fa-trash-alt" style = {{"color" : colors[index%5].primaryColor, "cursor" : "pointer"}} onClick = {handleDelete}></i>
                 </div>
