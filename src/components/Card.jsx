@@ -40,10 +40,11 @@ const Card = ({taskObj, index, deleteTask, updateListArray}) => {
     }
 
     return (
-        <div className = "card-wrapper mr-5">
-            <div className = "card-top" style={{"background-color": colors[index%5].primaryColor}}></div>
+        
+        <div className = "card-wrapper ">
+            <div className = "card-top" style={{"backgroundColor": colors[index%5].primaryColor}}></div>
             <div className = "task-holder">
-                <span className = "card-header" style={{ "border-radius": "10px"}}>{taskObj.Name}</span>
+                <span className = "card-header" style={{ "borderRadius": "10px"}}>{taskObj.Name}</span>
                 <p className = "mt-3">{taskObj.Description}</p>
 
                 <div className="ic" style={{"position": "absolute", "right" : "20px", "bottom" : "20px"}}>
@@ -53,6 +54,7 @@ const Card = ({taskObj, index, deleteTask, updateListArray}) => {
         </div>
         <EditTask modal = {modal} toggle = {toggle} updateTask = {updateTask} taskObj = {taskObj}/>
         </div>
+        
     );
 };
 
