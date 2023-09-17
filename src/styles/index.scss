@@ -73,7 +73,12 @@ button{
     padding: 1px 1px !important;
     text-align: center;
     background-color: rgb(233, 222, 222);
-   
+    
+
+    -webkit-box-shadow: 3px 6px 14px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 6px 14px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 6px 14px 0px rgba(0,0,0,0.75);
+
   }
   
   .task-container{
